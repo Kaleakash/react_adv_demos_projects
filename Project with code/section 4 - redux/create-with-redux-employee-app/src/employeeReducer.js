@@ -5,7 +5,7 @@ let initialState = {
     ]
 }
 
-function reducer(state=initialState,action){
+function employeeReducer(state=initialState,action){
     // base upon action we can do the changes on state variable. 
     // which is consider as global state
     console.log(action);
@@ -23,4 +23,4 @@ function reducer(state=initialState,action){
     return state;
 }
 
-export default reducer;
+export default employeeReducer;
