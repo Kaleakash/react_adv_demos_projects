@@ -1,11 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Couter } from './Couter';
+import { DecrementCounter } from './DecrementCounter';
+import { IncrementCounter } from './IncrementCounter';
 
 function App() {
   return (
     <div className="App">
-     <Couter></Couter>
+      <Couter></Couter>
+      <hr/>
+      <IncrementCounter></IncrementCounter>
+      <DecrementCounter></DecrementCounter>
     </div>
   );
 }

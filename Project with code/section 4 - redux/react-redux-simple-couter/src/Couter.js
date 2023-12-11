@@ -1,24 +1,13 @@
-import {useDispatch,useSelector} from 'react-redux';
-// Action Type
-
-const INCREMENT = 'INCREMENT';
-const DECREMENT = 'DECREMENT';
-
-// Actions
-
-const increment = () => ({ type: INCREMENT });
-const decrement = () => ({ type: DECREMENT });
+import {useSelector} from 'react-redux';
 
 export const Couter = ()=> {
-  const dispatch = useDispatch();
+
   const data = useSelector(state => state);
   
   return(
     <div>
-    {data}
-    <br/>
-    <input type="button" value="Increment" onClick={()=>dispatch(increment())}/>
-    <input type="button" value="Decrement" onClick={()=>dispatch(decrement())}/>       
+      <h3>Counter Component</h3>
+    <p>Counter value in Counter component {data}</p>
     </div>
   )
 }
