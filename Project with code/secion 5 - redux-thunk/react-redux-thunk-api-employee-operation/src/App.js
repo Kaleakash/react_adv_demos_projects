@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import DisplayEmployee from './components/DisplayComponent';
+import DisplayEmployee from './components/DisplayEmloyee';
 import AddEmployee from './components/AddEmployee';
 
 class App extends React.Component {
