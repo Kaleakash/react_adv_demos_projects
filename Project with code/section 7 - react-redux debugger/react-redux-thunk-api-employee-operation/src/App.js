@@ -1,0 +1,22 @@
+import React from 'react';
+
+import './App.css';
+import DisplayEmployee from './components/DisplayEmployee';
+import AddEmployee from './components/AddEmployee';
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  render() {
+    return(
+      <div className="container">
+        <h2>React With Redux Example</h2>
+        <AddEmployee></AddEmployee>
+        <DisplayEmployee></DisplayEmployee>
+      </div>
+    )
+  }
+}
+
+export default App;
