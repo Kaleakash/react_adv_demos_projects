@@ -2,21 +2,18 @@
   "technologies": [
     {
       "id": 1,
-      "name": "TypeScript — What is it all about?",
-      "like": 20,
-      "route": "https://levelup.gitconnected.com/typescript-what-is-it-all-about-4c9dea82cd32"
+      "name": "Java : Java is platform independent programming langauge",
+      "like": 20
     },
     {
       "id": 2,
-      "name": "JavaScript — A brief introduction",
-      "like": 16,
-      "route": "https://medium.com/@abongsjoel/javascript-a-brief-introduction-e995ae5a2494"
+      "name": "Python : Python is an open source interpreter scripting langauge",
+      "like": 16
     },
     {
       "id": 3,
-      "name": "Redux — A birds-eye view",
-      "like": 11,
-      "route": "https://levelup.gitconnected.com/redux-a-birds-eye-view-58925fc5ee8"
+      "name": "React : React JS is an open source library provided by facebook to develop Web UI Application",
+      "like": 11
     }
   ]
 }
