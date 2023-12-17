@@ -33,27 +33,47 @@ export function OfficeCharacters() {
   }
 
   return (
-    <>
-      <form onSubmit={add}>
-        <label htmlFor="newCharacter">New Character</label>
-        <input
+    <div className="container">
+    
+      <form onSubmit={add} className="form-group">
+    
+        <div className="row">
+          
+          <div className="col-2">
+              <label htmlFor="newCharacter">New Names</label>
+          </div>
+
+          <div className="col-3">
+          <input
           type="text"
           id="newCharacter"
           value={newCharacter}
           onChange={(e) => setNewCharacter(e.target.value)}
-        />
-        <button>Add</button>
+          className="form-control"
+          />
+          </div>
+
+          <div className="col-3">
+          <button className="btn btn-success">Add Names</button>
+          </div>
+
+        </div>
+
       </form>
-      <ul>
+
+
+      <ol>
         {characters.map((character, i) => (
           <li key={i} data-testid="character">
-            <span data-testid="name">{character}</span>{" "}
-            <button type="button" onClick={() => deleteCharacter(character)}>
-              Delete
-            </button>
+            <div className="row offset-3">
+            <div className="col-3">   <span data-testid="name">{character}</span>{" "}</div>
+            <div className="col-3">   <button type="button" onClick={() => deleteCharacter(character)} className="btn btn-danger">
+                  Delete
+                  </button></div>
+            </div>
           </li>
         ))}
-      </ul>
-    </>
+      </ol>
+    </div>
   );
 }
