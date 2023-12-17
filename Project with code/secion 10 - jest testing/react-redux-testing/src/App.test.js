@@ -14,8 +14,8 @@ describe("OfficeCharacters", () => {
     );
 
     return {
-      newCharacter: screen.getByLabelText("New Character"),
-      addButton: screen.getByText("Add"),
+      newCharacter: screen.getByLabelText("New Names"),
+      addButton: screen.getByText("Add Names"),
       getCharacters() {
         return screen.getAllByTestId("character").map((item) => ({
           name: within(item).getByTestId("name").textContent,
